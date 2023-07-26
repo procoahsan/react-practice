@@ -1,16 +1,11 @@
 import React from 'react'
-import './App.css'
-import Main from './Chandio'
 
-export default function App() {
+export default function Main() {
   return (
     <>
     <h1 className='mainheading'>Hello World</h1>
-   <Main />
-   <Main />
+    <h1 className='mainheading'>My name is Usama</h1>
     
     </>
-    
   )
 }
-
