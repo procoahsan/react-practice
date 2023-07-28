@@ -3,7 +3,8 @@ import './App.css'
 // import Main from './Chandio'
 //react-router-dom
 import Counter from './Counter';
-import Main from './Chandio'
+// import Main from './Chandio'
+import ChangeName from './ChangeName';
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 
 
@@ -14,7 +15,7 @@ export default function App() {
     <Route path="/" element={<Counter />}>
         <Route index element={<Counter />} />
       </Route>
-      <Route path="/aboutme" element={<Main />}></Route>
+      <Route path="/aboutme" element={<ChangeName />}></Route>
     </Routes>
     
     

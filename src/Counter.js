@@ -11,16 +11,16 @@ export default function Counter() {
     }
   
     return (
-      <div>
-        <h1 className='mainheading'>Counter app</h1>
-        <div className='counterappmain'>
-            <span>
-              <h1>{getCounter}</h1>
+      <div className='flex flex-col items-center justify-center gap-3'>
+        <h1 className='text-black text-[20px] font-bold' >Counter app</h1>
+        <div className='flex flex-col items-center justify-center gap-3'>
+            <span className='text-[30px] font-bold'>
+              {getCounter}
   
             </span>
-            <span className='counterbuttons'>
-              <button style={{height:'40px',width:'80px',background:'green',color:'white',fontSize:'25px',pointer:"cursor"}} onClick={increment}>+</button>
-              <button style={{height:'40px',width:'80px',background:'red',color:'white',fontSize:'25px',pointer:"cursor"}} onClick={decrement}>-</button>
+            <span className='flex flex-row gap-3'>
+              <button className='h-[40px] w-[40px] bg-green-600 text-white text-[25px] pointer-cursor' onClick={increment}>+</button>
+              <button className='h-[40px] w-[40px] bg-red-700 text-white text-[25px] pointer-cursor' onClick={decrement}>-</button>
   
             </span>
   
@@ -30,3 +30,4 @@ export default function Counter() {
       
     )
 }
+//style={{height:'40px',width:'80px',background:'green',color:'white',fontSize:'25px',pointer:"cursor"}}
