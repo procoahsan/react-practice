@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-
+import { Navbar } from './Navbar'
 export default function Counter() {
     const [getCounter,setCounter]=useState(0)
 
@@ -11,6 +11,8 @@ export default function Counter() {
     }
   
     return (
+      <>
+      <Navbar activeStep={1} />
       <div className='flex flex-col items-center justify-center gap-3'>
         <h1 className='text-black text-[20px] font-bold' >Counter app</h1>
         <div className='flex flex-col items-center justify-center gap-3'>
@@ -27,7 +29,7 @@ export default function Counter() {
         </div>
   
       </div>
-      
+      </>
     )
 }
 //style={{height:'40px',width:'80px',background:'green',color:'white',fontSize:'25px',pointer:"cursor"}}
